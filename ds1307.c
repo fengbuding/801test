@@ -176,7 +176,7 @@ void ds1307_Write(u8 WriteAddr,u8 Data)
 }
 void SetTime(void)
 {
-  u8 timer[]={00,30,14,0,31,10,16};
+  u8 timer[]={00,03,14,0,1,11,16};
   ds1307_Write(0x00,timer[0]);  //–¥√Î
   ds1307_Write(0x01,timer[1]);  //–¥∑÷÷”
   ds1307_Write(0x02,timer[2]);  //–¥–° ±

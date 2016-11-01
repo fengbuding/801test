@@ -55,7 +55,7 @@ void USART1_Config(void)
 		USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
 		USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
 		USART_Init(USART1, &USART_InitStructure); 
-        USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);
+      //  USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);
 		USART_Cmd(USART1, ENABLE);
 }
 void USART2_Config(void)

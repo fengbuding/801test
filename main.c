@@ -297,7 +297,7 @@ int main(void)
     UsartInit();
     LED_Gpioinit();
     i2c_Init();
-    RTC_init();
+     RTC_init();
     GetTime(&now); 
     
     f_mount(0,&fs);
@@ -329,7 +329,7 @@ int main(void)
         SD_Write();
         
         bsp_DelayMS(500); 
-        GPIO_WriteBit(GPIOB, GPIO_Pin_0, (BitAction) (1 - GPIO_ReadOutputDataBit(GPIOB, GPIO_Pin_0)));
+      //  GPIO_WriteBit(GPIOB, GPIO_Pin_0, (BitAction) (1 - GPIO_ReadOutputDataBit(GPIOB, GPIO_Pin_0)));
         
     }
 }

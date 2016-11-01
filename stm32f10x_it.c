@@ -65,6 +65,8 @@ void EXTI4_IRQHandler(void)
 }
 void USART1_IRQHandler(void)
 {	
+     GPIO_WriteBit(GPIOB, GPIO_Pin_0, (BitAction) (1 - GPIO_ReadOutputDataBit(GPIOB, GPIO_Pin_0)));
+
 	if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)
 	{ 	
         if(USART_ReceiveData(USART1)=='S')
