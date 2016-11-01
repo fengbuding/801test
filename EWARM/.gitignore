@@ -1,0 +1,9 @@
+/TEMPLATE.dep
+/TEMPLATE.ewd
+/TEMPLATE.ewp
+/TEMPLATE.ewt
+/TEMPLATE.eww
+/stm32f10x_flash.icf
+/stm32f10x_flash_extsram.icf
+/stm32f10x_nor.icf
+/stm32f10x_ram.icf
